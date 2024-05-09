@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Programme</title>
+</head>
+
+<body>
+    <script>
+        //defining the array
+       
+
+      
+        function findMissingNumber(arr) 
+        {
+            document.write("Missing Numbers are:<br>");
+
+            for (let i = 0; i < arr.length - 1; i++) 
+            {
+                if (arr[i + 1] - arr[i] > 1) // condition to check two conseccutive array elements
+                {   let no=arr[i]+1
+                    document.write(no+"<br>");
+                    if((arr[i+1]-no)>1)
+                    {
+                        no=no+1;
+                        document.write(no+"<br>");
+                    }
+                  
+                }
+            }
+
+        }
+        findMissingNumber(sortedArray);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
