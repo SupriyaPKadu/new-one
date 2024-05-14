@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations</title>
+</head>
+
+<body>
+    <script>
+        //String Operations 
+        //create a string
+        let str = "JavaScript";
+
+
+        console.log(str);
+        //template string
+        let txt = 'Hello! "Javascript"';
+        console.log(txt);
+        //string length
+        let len = txt.length;
+        console.log("The string length is:") + len;
+        //escape sequence
+        let str1 = "Hii this is \"javascript\" session";
+        console.log(str1);
+        // String Methods
+        //charAt
+
+        console.log(str.charAt(2));
+        console.log(str.charCodeAt(3));
+        //Acess Property
+        let char = str[3];
+        console.log(char);
+
+
+        // slice
+        let str3 = "India ,Japan ,Russia";
+        let str3_slice = str3.slice(5, 10);
+        console.log(str3_slice);
+
+        let str3_substring = str3.substring(5, 10);
+        console.log("The substring is:" + str3_substring);
+
+        let str3_substr = str3.substr(4, 13);
+        console.log("The substr part of string is:" + str3_substr);
+
+
+        // upper case & lower case 
+        let str4 = "react";
+        //let str4_lower=str4.toLowerCase(str4);
+        //console.log(str4);
+
+        let str4_upper = str4.toUpperCase(str4);
+        console.log(str4);
+
+        console.log("string is reapeated:", str4.repeat(3));
+
+
+        // string replace
+        let str5 = "Hii this is javascript session";
+        console.log(str5.replace("javascript", "React"));
+
+        //conversion of string to array
+        let str6 = "a,b,c,d,e,f";
+        const array = str6.split(",");
+        console.log("Array element at index 2 is" + array[2]);
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ES6 & features</title>
+</head>
+
+<body>
+  <!--<h2>Multiplication Using Arrow Function:</h2>
+    <div id="arrow-fun">
+        
+    </div>  -->
+
+  <!--ECMAScript and its features-->
+  <script>
+    /*
+    Main Features
+     Let & Const
+     Default Parameter Values
+     Array.find()
+     Array.findIndex()
+    
+    
+    */
+
+    /* 
+     // let & const
+     var a = 10;
+     var a = 30;
+     console.log(a);
+
+     let _a = 10;
+    // let _a = 30;
+     console.log(a);
+
+     const b = "JavaScript";
+     //const b = "js";
+     console.log(b);
+   */
+    //**********************************************************************************************
+    //Arrow function
+    /* var a= function(x,y){
+       return x*y;
+
+
+     }
+
+
+     document.getElementById("arrow-fun").innerHTML=a(9,7);
+
+
+     const b= (x,y)=>x*y;
+     document.getElementById("arrow-fun").innerHTML=b(6,9);
+     
+     
+     
+     
+     const fatArrowFun= (x,y)=>x*y;
+      document.getElementById("arrow-fun").innerHTML=(6,9);*/
+
+    //**************************************************************************************
+    //Default Parameters
+    /* function _default_Para( a,b=9){
+
+       console.log("Addition:"+ a+b);
+     }
+     _default_Para(20);
+     
+     */
+    //****************************************************************************************
+    // Rest Parameters
+
+    /*function rest_Parameters(...inputs){
+
+      //console.log(...inputs);
+      let sum=0;
+      for(let i of inputs)
+      {  sum+=i;
+     
+      }
+      console.log("The Asdition  Using Rest Parameters is:"+sum);
+    }
+    rest_Parameters(10,20, 30, 40, 50 ,4);
+    */
+    //******************************************************************************************************
+    //Spread Operators
+
+    /*
+    function sum(a,b,c){
+      console.log(a+b+c);
+     }
+     arrval=[10,20,30];
+     sum(...arrval);//given values using  spread operator
+
+     //string concat using spread operator(...) 
+     arr1=[1,2,3,4];
+     arr2=[2,4,6,8];
+    
+   arr1=[...arr1,...arr2];
+   console.log(arr1);
+   */
+    //for_of loop
+
+
+
+    /*const arr=["Audi","Thar","Lamborgini"];
+    let txt="";
+    for(let i of arr){
+      txt=txt+i+" ";
+    }
+    console.log(txt);
+
+    //looping over a string 
+    let str="P99Soft";
+    let str_copy="";
+    for(let i of str){
+      str_copy+=i+"\n";
+    }
+    console.log(str_copy);
+    */
+    //**************************************************************************************
+
+    // Sets in Javscript
+    //create a set
+
+    /*
+    const letters= new Set(["A","B","C"]);
+    
+    //accesing the set elements
+    let text="";
+    for(let i of letters){
+     text=text+i+"\n";
+    }
+    console.log(text+"\n"+typeof(letters));
+ 
+    */
+    //*************************************************************************************
+    //Class
+    // create and acess class
+
+    class Car {
+      constructor(name, year) {
+        this.name = name;
+        this.year = year;
+      }
+    }
+    const car1 = new Car("Audi" + "\n" + 2023);
+    const car2 = new Car("Ford" + "\n" + 2024);
+    console.log(car1.name + "" + car1.year);
+
+    console.log(car2.name + "" + car2.year);
+  
