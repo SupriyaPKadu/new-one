@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Repeat</title>
+</head>
+<body>
+    <script>
+    function findDuplicateCharacters(str) {
+        var result = [];
+        
+    
+        for (var i = 0; i <str.length; i++) {
+            for (var j = i + 1; j < str.length; j++) {
+                if (str[i] === str[j]) {
+                    result.push(str[j]);
+                }
+            }
+        }
+        return result;
+    
+    }
+    let string1 = "javascsript";
+    const arr=  findDuplicateCharacters(string1)
+    document.write("Duplicate Array Elements:"+arr);
+  
+   
+   
+    
+</script>
+
+
+</body>
+</html>
