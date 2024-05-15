@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        //regural object creation:
+        // const person = {
+        //     firstName: "supriya",
+        //     lastName: "kadu",
+        //     age: 22, 
+        //     eyeColor: "brown"
+        // };
+
+        // document.getElementById("demo").innerHTML =person.firstName + " is " + person.age + " years old.";
+
+        //***************************************************************
+        //another way to create object
+        // const person={};
+        // person.name="riya";
+        // person.age=20;
+        // document.getElementById("demo").innerHTML=person.name+" "+"age is"+person.age;
+
+        //**************************************************************************************
+
+        //Object creation using new keyword
+        // const person = new Object();
+        // person.firstName = "fname";
+        // person.lastName = "xyz";
+        // person.age = 25;
+        // person.eyeColor = "black";
+        // document.getElementById("demo").innerHTML="person name is:"+person.firstName;
+
+        //*********************************************************************************
+
+        //for in loop over objects
+
+        // const data = {
+        //     fname: "Jiya",
+        //     lname: "shankar",
+        //     age: 28
+        // };
+
+        // let txt = "";
+        // for (let i in data) {
+        //     txt = txt + data[i] + " ";
+        // }
+
+        // document.getElementById("demo").innerHTML = txt;
+        // data.gender="female";//adding new property to object
+        // delete data.age;//delete object property age
+
+        //********************************************************
+        //this keyword =this refers to the object
+
+        //         const person = {
+        //   firstName: "jiya",
+        //   lastName: "shankar",
+        //   id: 5566,
+        //   fullName : function() {
+        //     return this.firstName + " " + this.lastName;
+        //   }
+        // };
+
+        //  Display data from the object:
+        // document.getElementById("demo").innerHTML = person.fullName();
+
+        //***********************************************
+
+        //this in function returns the global object
+        function myfunction() {
+            return this;
+        }
+        document.getElementById("demo").innerHTML = myfunction();
+
+        //this alone refer to global object
+        let x = this;
+        document.write("when we use this alone:" + x);
+
+
+    </script>
+
+</body>
+
+</html>
