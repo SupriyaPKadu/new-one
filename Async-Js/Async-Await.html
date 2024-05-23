@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async-Await</title>
+  </head>
+  <body>
+    <script>
+      function delayFunction() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve("Delay resolved after 2 seconds");
+          }, 2000);
+        });
+      }
+
+      async function asyncFunction() {
+        const result = await delayFunction();
+        
+
+        console.log(result);
+      }
+
+      asyncFunction();
+    </script>
+  </body>
+</html>
