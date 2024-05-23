@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Callback</title>
+  </head>
+  <body>
+    <h2>Callback Functions</h2>
+    <p id="demo1"></p>
+
+    <script>
+      //eg. 1
+      
+       function temp(res){
+
+         document.getElementById("demo1").innerHTML=res;
+       }
+       function calculate(no1,no2,myCallback){
+          let sum=no1+no2;
+          myCallback(sum);
+       }
+        calculate(5,4,temp);
+
+      
+      
+      //eg. 2
+     
+      //     const msg = ()=>{ console.log("hey,we are learning callbacks")  }
+      //    setTimeout(msg,2000)
+
+      
+      
+      //eg. 3
+      //javascript asynchronus execution
+      
+     
+      // console.log("hey");
+      // setTimeout(() => {
+      //   console.log("what about you?..what are you doing");
+      // }, 3000);
+      // console.log("I am learning about asynchronus javascript");
+
+
+
+
+
+
+
+
+      
+    </script>
+  </body>
+</html>
