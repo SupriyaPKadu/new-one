@@ -1,9 +1,25 @@
-//function for addition of two numbers 
-/*function addNumber(no1, no2) {
-    // no3 = no1 + no2;
-    // document.write("Addition of two numbers:" + no3);
-    return no1 + no2;
+document.getElementById("btn_ajax").addEventListener("click",makerequest);
+function makerequest(){
+    console.log("Button Clicked");
+    const xhr=new XMLHttpRequest();//XMLHTTPrequest object creation
+    xhr.open("GET","DATA.txt",true);// Initialise the request
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState===XMLHttpRequest.DONE){
+
+            if(xhr.status==200){
+              console.log(xhr);//return the xhr object
+              console.log(xhr.responseText);
+
+            }
+            else{
+                console.log("Error while Hnadling the request");
+
+            }
+        
+        }
+
+    };
+    xhr.send();
+
 
 }
-let x = addNumber(10, 20);
-document.write("Addition of two numbers:" + x);*/
